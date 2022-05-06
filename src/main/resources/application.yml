@@ -1,0 +1,11 @@
+feign:
+  client:
+    config:
+      dark-sky-api:
+        url: https://dark-sky.p.rapidapi.com
+        x-rapidapi-host: dark-sky.p.rapidapi.com
+        x-rapidapi-key: 43f43df659msh1b0d1eb5d922018p1976ebjsn2892cc8cfd6f
+        connectTimeout: 5000
+        readTimeout: 5000
+        requestInterceptors:
+          - com.example.FooRequestInterceptor
