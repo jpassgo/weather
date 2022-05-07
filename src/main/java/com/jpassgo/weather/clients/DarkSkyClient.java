@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @FeignClient(name = "dark-sky-api", url = "${dark-sky-api.url}")
 public interface DarkSkyClient {
 
-    @GetMapping
-    JsonObject forecast(@Param String longitude, @Param String latitude);
+  @GetMapping
+  JsonObject forecast(@Param String longitude, @Param String latitude);
 }

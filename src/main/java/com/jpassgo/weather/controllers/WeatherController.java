@@ -11,11 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/weather")
 public class WeatherController {
 
-    public WeatherForecastService weatherForecastService;
+  public WeatherForecastService weatherForecastService;
 
-    @PostMapping
-    public ResponseEntity weather(Location location) {
-        return ResponseEntity.ok(weatherForecastService.getCurrentWeatherReport(location));
-    }
+  @PostMapping
+  public ResponseEntity weather(Location location) {
+    return ResponseEntity.ok(weatherForecastService.getCurrentWeatherReport(location));
+  }
 }
-
