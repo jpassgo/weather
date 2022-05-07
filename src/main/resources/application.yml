@@ -8,4 +8,4 @@ feign:
         connectTimeout: 5000
         readTimeout: 5000
         requestInterceptors:
-          - com.example.FooRequestInterceptor
+          - com.jpassgo.weather.interceptors.DarkSkyInterceptor
